@@ -92,13 +92,21 @@ This makes the project **AI-enhanced**.
 
 CloudoFilesAI/
 │
+
 ├── backend/
+
 │ ├── controllers/
+
 │ ├── models/
+
 │ ├── routes/
+
 │ ├── middleware/
+
 │ ├── utils/
+
 │ └── server.js
+
 │
 ├── client/
 │ ├── src/
