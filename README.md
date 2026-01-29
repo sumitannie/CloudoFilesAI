@@ -1,6 +1,6 @@
 # 🌩️ CloudoFilesAI
 
-CloudoFilesAI is an AI-assisted cloud file management system inspired by Google Drive, enhanced with smart intelligence features.  
+CloudoFilesAI is an AI-assisted cloud file management system with smart intelligence features.  
 It allows users to securely upload, organize, search, and manage files with AI-based classification and smart suggestions.
 
 This project is built as a full-stack MERN application and is designed to be scalable and secure.
@@ -56,7 +56,7 @@ This project is built as a full-stack MERN application and is designed to be sca
 
 ## 🧠 Why This Project is Different
 
-Unlike a basic Google Drive clone, **CloudoFilesAI adds intelligence**:
+Unlike a basic file management system, **CloudoFilesAI adds intelligence**:
 - Files are **understood**, not just stored
 - Important documents are **highlighted automatically**
 - System gives **smart insights**, not just storage
