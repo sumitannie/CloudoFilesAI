@@ -61,7 +61,7 @@ Unlike a basic Google Drive clone, **CloudoFilesAI adds intelligence**:
 - Important documents are **highlighted automatically**
 - System gives **smart insights**, not just storage
 
-This makes the project **AI-enhanced**.
+This makes the project **AI-assisted**.
 
 ---
 
