@@ -39,7 +39,7 @@ This project is built as a full-stack MERN application and is designed to be sca
 - Importance detection (high / normal / low)
 - AI-generated **Smart Suggestions**
   - Highlights important files
-  - Suggests unused or critical documents
+  - puts files into auto-folders(example - Resume pdfs into 'Important' folder as well as in 'PDFs' folder)
 
 ### 🔍 Search & Filters
 - Search files by name
@@ -85,7 +85,7 @@ This makes the project **AI-assisted**.
 - File name + MIME analysis
 - Smart tagging
 - Importance detection
-- Smart suggestions engine
+- auto-folders
 
 ---
 ## 📂 Project Structure
