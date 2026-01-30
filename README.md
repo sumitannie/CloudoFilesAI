@@ -185,11 +185,5 @@ http://localhost:5000
 - Sharing files with permissions
   
 
-👤 Author
-Sumitannie
-
-Final-year Computer Science student
-
-Full-Stack & AI-focused Developer
 
 
