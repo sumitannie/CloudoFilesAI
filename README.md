@@ -165,21 +165,31 @@ http://localhost:5173
 Backend runs on:
 http://localhost:5000
 
-🔒 Security Notes:
--node_modules is excluded using .gitignore
--JWT tokens stored securely in localStorage
--All file routes are protected
+###🔒 Security Notes:
+- node_modules is excluded using .gitignore
+  
+- JWT tokens stored securely in localStorage
+  
+- All file routes are protected
+  
 
-📌 Future Improvements
--True semantic search using embeddings
--File content analysis (PDF text extraction)
--AI-based file recommendations
--Usage analytics dashboard
--Sharing files with permissions
+###📌 Future Improvements
+- True semantic search using embeddings
+  
+- File content analysis (PDF text extraction)
+  
+- AI-based file recommendations
+  
+- Usage analytics dashboard
+  
+- Sharing files with permissions
+  
 
 👤 Author
 Sumitannie
+
 Final-year Computer Science student
+
 Full-Stack & AI-focused Developer
 
 
