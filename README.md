@@ -89,45 +89,28 @@ This makes the project **AI-enhanced**.
 
 ---
 ## 📂 Project Structure
-
+```bash
 CloudoFilesAI/
 │
-
 ├── backend/
-
 │ ├── controllers/
-
 │ ├── models/
-
 │ ├── routes/
-
 │ ├── middleware/
-
 │ ├── utils/
-
 │ └── server.js
-
 │
-
 ├── client/
-
 │ ├── src/
-
 │ │ ├── components/
-
 │ │ ├── pages/
-
 │ │ ├── styles/
-
 │ │ └── api/
-
 │ └── vite.config.js
-
 │
 ├── package.json
-
 └── README.md
-
+```
 
 --
 ## ⚙️ Installation & Setup
