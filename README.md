@@ -1,9 +1,9 @@
 # 🌩️ CloudoFilesAI
 
-CloudoFilesAI is an AI-powered cloud file management system inspired by Google Drive, enhanced with smart intelligence features.  
+CloudoFilesAI is an AI-assisted cloud file management system with smart intelligence features.  
 It allows users to securely upload, organize, search, and manage files with AI-based classification and smart suggestions.
 
-This project is built as a full-stack MERN application and is designed to be scalable, secure, and resume-worthy.
+This project is built as a full-stack MERN application and is designed to be scalable and secure.
 
 ---
 
@@ -39,7 +39,7 @@ This project is built as a full-stack MERN application and is designed to be sca
 - Importance detection (high / normal / low)
 - AI-generated **Smart Suggestions**
   - Highlights important files
-  - Suggests unused or critical documents
+  - puts files into auto-folders(example - Resume pdfs into 'Important' folder as well as in 'PDFs' folder)
 
 ### 🔍 Search & Filters
 - Search files by name
@@ -56,7 +56,7 @@ This project is built as a full-stack MERN application and is designed to be sca
 
 ## 🧠 Why This Project is Different
 
-Unlike a basic Google Drive clone, **CloudoFilesAI adds intelligence**:
+Unlike a basic file management system, **CloudoFilesAI adds intelligence**:
 - Files are **understood**, not just stored
 - Important documents are **highlighted automatically**
 - System gives **smart insights**, not just storage
@@ -85,49 +85,32 @@ This makes the project **AI-enhanced**.
 - File name + MIME analysis
 - Smart tagging
 - Importance detection
-- Smart suggestions engine
+- auto-folders
 
 ---
 ## 📂 Project Structure
-
+```bash
 CloudoFilesAI/
 │
-
 ├── backend/
-
 │ ├── controllers/
-
 │ ├── models/
-
 │ ├── routes/
-
 │ ├── middleware/
-
 │ ├── utils/
-
 │ └── server.js
-
 │
-
 ├── client/
-
 │ ├── src/
-
 │ │ ├── components/
-
 │ │ ├── pages/
-
 │ │ ├── styles/
-
 │ │ └── api/
-
 │ └── vite.config.js
-
 │
 ├── package.json
-
 └── README.md
-
+```
 
 --
 ## ⚙️ Installation & Setup
@@ -165,21 +148,25 @@ http://localhost:5173
 Backend runs on:
 http://localhost:5000
 
-🔒 Security Notes:
--node_modules is excluded using .gitignore
--JWT tokens stored securely in localStorage
--All file routes are protected
+###🔒 Security Notes:
+- node_modules is excluded using .gitignore
+  
+- JWT tokens stored securely in localStorage
+  
+- All file routes are protected
+  
 
-📌 Future Improvements
--True semantic search using embeddings
--File content analysis (PDF text extraction)
--AI-based file recommendations
--Usage analytics dashboard
--Sharing files with permissions
+###📌 Future Improvements
+- True semantic search using embeddings
+  
+- File content analysis (PDF text extraction)
+  
+- AI-based file recommendations
+  
+- Usage analytics dashboard
+  
+- Sharing files with permissions
+  
 
-👤 Author
-Sumitannie
-Final-year Computer Science student
-Full-Stack & AI-focused Developer
 
 
