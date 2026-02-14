@@ -1,6 +1,6 @@
 # 🚀 CloudoFilesAI
 
-An AI-powered smart file manager that automatically organizes your uploads into intelligent folders.
+An AI-powered smart file manager that automatically organizes your uploads into intelligent folders based on the file content.
 
 Upload documents, images, resumes, projects, and more — the system reads content, understands context, and organizes everything for you.
 
