@@ -1,172 +1,222 @@
-# 🌩️ CloudoFilesAI
+# 🚀 CloudoFilesAI
 
-CloudoFilesAI is an AI-assisted cloud file management system with smart intelligence features.  
-It allows users to securely upload, organize, search, and manage files with AI-based classification and smart suggestions.
+An AI-powered smart file manager that automatically organizes your uploads into intelligent folders.
 
-This project is built as a full-stack MERN application and is designed to be scalable and secure.
-
----
-
-## 🚀 Features
-
-### 🔐 Authentication
-- User registration & login
-- JWT-based secure authentication
-- Protected routes
-
-### 📁 File Management
-- Upload files (PDF, images, documents, media, etc.)
-- Cloud storage using **Cloudinary**
-- View files in a clean dashboard
-- Open files directly from cloud
-- Pagination for large file collections
-
-### 🗑️ Trash System
-- Soft delete (move files to trash)
-- Restore deleted files
-- Permanently delete files
-- Separate Trash view
-
-### 🧠 AI-Powered Intelligence
-- **Automatic file classification**
-  - Resume
-  - Certificate
-  - Project
-  - Notes
-  - Images
-  - Documents
-- Confidence score for classification
-- Importance detection (high / normal / low)
-- AI-generated **Smart Suggestions**
-  - Highlights important files
-  - puts files into auto-folders(example - Resume pdfs into 'Important' folder as well as in 'PDFs' folder)
-
-### 🔍 Search & Filters
-- Search files by name
-- Filter by file type (image, pdf, document)
-- Client-side filtering for fast UX
-
-### 🎨 UI / UX
-- Clean, modern dashboard UI
-- Sidebar navigation
-- Responsive design
-- Attractive card-based layout
+Upload documents, images, resumes, projects, and more — the system reads content, understands context, and organizes everything for you.
 
 ---
 
-## 🧠 Why This Project is Different
+## ✨ Features
 
-Unlike a basic file management system, **CloudoFilesAI adds intelligence**:
-- Files are **understood**, not just stored
-- Important documents are **highlighted automatically**
-- System gives **smart insights**, not just storage
+### 🤖 AI Document Intelligence
 
-This makes the project **AI-enhanced**.
+* Extracts text from PDFs, DOCX, and text files
+* Uses **Google Gemini AI API** to analyze content
+* Auto-generates:
+
+  * 📁 Folder name
+  * 🏷 Tags
+  * 📂 Category
 
 ---
 
-## 🛠️ Tech Stack
+### 🧠 Smart Auto-Organization
+
+* Files automatically grouped into AI folders like:
+
+  * Career
+  * Learning
+  * Projects
+  * AI Ideas
+  * Finance
+  * Personal
+* Unlimited dynamic folder generation
+* Context-aware organization
+
+---
+
+### 🖼 Media Handling
+
+* Images → auto sorted into **Images**
+* Videos → auto sorted into **Videos**
+* Documents → AI classified intelligently
+
+---
+
+### ☁️ Cloud Storage
+
+* Secure uploads via **Cloudinary**
+* Fast file delivery & preview
+
+---
+
+### 🔐 Authentication & Security
+
+* JWT-based authentication
+* User-specific file storage
+* Protected routes
+
+---
+
+### 🗑 File Management
+
+* Upload & delete files
+* Trash & restore system
+* Permanent delete option
+* Search by filename
+* Pagination for performance
+
+---
+
+### 🧭 AI Folder Navigation
+
+* Dedicated **AI-Generated Folders** page
+* Click folder → view filtered files
+* Back navigation & breadcrumbs
+* Folder counts & sorting
+
+---
+
+## 🛠 Tech Stack
 
 ### Frontend
-- React (Vite)
-- React Router DOM
-- Axios
-- CSS (custom design system)
+
+* React + Vite
+* React Router
+* Axios
+* CSS
 
 ### Backend
-- Node.js
-- Express.js
-- MongoDB + Mongoose
-- JWT Authentication
-- Multer
-- Cloudinary
 
-### AI / Intelligence (Rule-based, extensible)
-- File name + MIME analysis
-- Smart tagging
-- Importance detection
-- auto-folders
+* Node.js
+* Express.js
+* MongoDB + Mongoose
+* Cloudinary
+
+### AI & Processing
+
+* Google Gemini API
+* pdf-parse (PDF text extraction)
+* mammoth (DOCX extraction)
 
 ---
+
 ## 📂 Project Structure
-```bash
+
+```
 CloudoFilesAI/
 │
+├── client/              # React frontend
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   └── styles/
+│
 ├── backend/
-│ ├── controllers/
-│ ├── models/
-│ ├── routes/
-│ ├── middleware/
-│ ├── utils/
-│ └── server.js
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   └── server.js
 │
-├── client/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── styles/
-│ │ └── api/
-│ └── vite.config.js
-│
-├── package.json
 └── README.md
 ```
 
---
+---
+
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the repository
+### 1️⃣ Clone the repo
 
-git clone https://github.com/sumitannie/CloudoFilesAI.git
-
+```bash
+git clone https://github.com/YOUR_USERNAME/CloudoFilesAI.git
 cd CloudoFilesAI
+```
 
-2️⃣ Backend Setup
+---
+
+### 2️⃣ Backend Setup
+
+```bash
 cd backend
 npm install
+```
 
-Create a .env file:
+Create a `.env` file:
 
-PORT=5000
-MONGO_URI=your_mongodb_connection
-JWT_SECRET=your_secret_key
+```
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret
+
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
 
-Run backend:
+GEMINI_API_KEY=your_gemini_api_key
+```
 
-npm start
-3️⃣ Frontend Setup
+Start backend:
+
+```bash
+npm run dev
+```
+
+---
+
+### 3️⃣ Frontend Setup
+
+```bash
 cd client
 npm install
 npm run dev
+```
 
-Frontend runs on:
-http://localhost:5173
+---
 
-Backend runs on:
-http://localhost:5000
+## 🔑 Getting Gemini API Key
 
-###🔒 Security Notes:
-- node_modules is excluded using .gitignore
-  
-- JWT tokens stored securely in localStorage
-  
-- All file routes are protected
-  
+1. Go to: https://aistudio.google.com/apikey
+2. Create API key
+3. Enable Generative Language API
+4. Add to `.env`
 
-###📌 Future Improvements
-- True semantic search using embeddings
-  
-- File content analysis (PDF text extraction)
-  
-- AI-based file recommendations
-  
-- Usage analytics dashboard
-  
-- Sharing files with permissions
-  
+---
 
+## 🤖 How AI Organization Works
 
+1️⃣ User uploads file
+2️⃣ Backend extracts text
+3️⃣ Gemini AI analyzes content
+4️⃣ AI returns:
 
+```json
+{
+  "category": "Resume",
+  "folder": "Career",
+  "summary": "...",
+  "tags": ["skills", "projects"]
+}
+```
+
+5️⃣ File saved & auto-organized
+
+---
+
+## 📸 Screenshots
+
+*(Add screenshots here for GitHub)*
+
+---
+
+## 🚀 Future Improvements
+
+* Drag & drop file organization
+* Folder color themes
+* AI file search (semantic search)
+* Duplicate detection
+* File preview thumbnails
+* Mobile responsive UI
+* Shareable file links
+* Voice upload & organization
+
+---
