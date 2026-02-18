@@ -1,5 +1,4 @@
 import { useEffect, useState, useCallback } from "react";
-import axios from "axios"; 
 import { filesAPI } from "../api/api";
 import FileCard from "../components/FileCard";
 import "../styles/dashboard.css";
@@ -41,11 +40,7 @@ export default function Trash() {
       )
     ) {
       try {
-        const token = localStorage.getItem("token");
-        await axios.delete("http://localhost:5000/api/files/empty-trash", {
-          headers: { Authorization: `Bearer ${token}` },
-        });
-
+        await filesAPI.emptyTrash();
         setFiles([]);
         alert("Trash emptied successfully!");
       } catch (err) {
