@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from "react";
-import axios from "axios"; // Fixed: Added missing import
+import axios from "axios"; 
 import { filesAPI } from "../api/api";
 import FileCard from "../components/FileCard";
 import "../styles/dashboard.css";
@@ -8,7 +8,6 @@ export default function Trash() {
   const [files, setFiles] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fixed: Wrapped in useCallback to satisfy linter and prevent infinite loops
   const fetchTrash = useCallback(async () => {
     try {
       const res = await filesAPI.getTrash();
@@ -20,7 +19,6 @@ export default function Trash() {
     }
   }, []);
 
-  // Fixed: Added fetchTrash to dependency array
   useEffect(() => {
     fetchTrash();
   }, [fetchTrash]);
@@ -31,7 +29,6 @@ export default function Trash() {
   };
 
   const handleDeleteForever = async (id) => {
-    // used globalThis to satisfy your specific linter warning
     if (!globalThis.confirm("Delete permanently?")) return;
     await filesAPI.deleteForever(id);
     fetchTrash();
@@ -45,7 +42,6 @@ export default function Trash() {
     ) {
       try {
         const token = localStorage.getItem("token");
-        // Ensure this URL matches your backend port (usually 5000)
         await axios.delete("http://localhost:5000/api/files/empty-trash", {
           headers: { Authorization: `Bearer ${token}` },
         });

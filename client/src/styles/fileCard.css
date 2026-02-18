@@ -111,6 +111,21 @@
   color: white;
 }
 
+:root[data-theme="dark"] .file-card.trash {
+  background: rgba(239, 68, 68, 0.05);
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+:root[data-theme="dark"] .file-card.trash .file-actions button:first-child {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+}
+
+:root[data-theme="dark"] .file-card.trash .file-actions button:first-child:hover {
+  background: #34d399;
+  color: #000;
+}
+
 @media (max-width: 768px) {
   .file-card {
     padding: var(--spacing-md);
