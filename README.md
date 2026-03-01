@@ -219,7 +219,6 @@ npm run dev
 * AI file search (semantic search)
 * Duplicate detection
 * File preview thumbnails
-* Mobile responsive UI
 * Shareable file links
 * Voice upload & organization
 
